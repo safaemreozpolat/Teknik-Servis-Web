@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTTEKNIKSERVIS</title>
+    <style>
+        .header{
+            width: auto;
+            height: 50px;
+            background-color: rgba(68, 67, 67, 0.247);
+        }
+        .telefonp{
+            float:right;
+            margin-top: 2px;
+            padding: 0px;
+            font-size: 22px;
+            color: #535362;
+        }
+        .telefonp:hover{
+            color: black;
+        }
+        .telefon{
+            float:right;
+            width: 160px;
+            height: 28px;
+            padding: 0px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            margin-top: 8px;
+        }
+        .whatsapp{
+            float:right;
+            width: 170px;
+            height: 28px;
+            padding-right: 50px;
+            margin-top: 8px;
+            margin-right: 50px;
+
+        }
+        .whatsappp{
+            float:right;
+            margin-top: 2px;
+            padding: 0px;
+            font-size: 22px;
+            color: #535362;
+        }
+        .whatsappp:hover{
+            color: black;
+        }
+        .mail{
+            float:right;
+            width: 175px;
+            height: 28px;
+            padding-right: 50px;
+            margin-top: 8px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .mailp{
+            float:right;
+            margin-top: 2px;
+            padding: 0px;
+            font-size: 22px;
+            color: #535362;
+        }
+        .mailp:hover{
+            color: black;
+        }
+        .servis{
+            padding-left: 25px;
+            padding-top: 12px;
+            margin: 5px;
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0.514);
+        }
+        
+        .logo{
+            margin-top: 22px;
+            float: left;
+        }
+        .menü-üst{
+            text-align: center;
+            display: inline-block;     
+        }
+        ul{
+            float: right;
+            margin-top: 35px;
+            margin-left: 200px;
+            padding: 0px;
+        }
+        li{
+
+            list-style: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 15px;
+            padding: 0px;
+        }      
+        .nav{
+            height: 150px;
+        }
+        
+        .menü{
+            text-decoration: none;
+            color: black;
+        }
+        .menü:visited{/*tıklandıktan sonra sayfadaki şekli sen buna tıkladın.*/
+            text-decoration: none;
+            color: black;
+        } 
+        .menü:hover{/*üstüne gelindiğinde*/
+            text-decoration: none;
+            color: rgb(4, 99, 80);
+        }
+        .menü:active{/*tıklandıgında*/
+            text-decoration: none;
+            color: rgb(134, 221, 123);
+        }
+        .yeniüyelogo{
+            float: right;
+            width: 95px;
+            height: 26px;
+            margin-top:45px;
+            margin-bottom: 60px;
+            margin-right: 0px;
+        }
+        .yeniüye{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            float: right;
+            margin: 0px;
+            padding-top: 7px;
+            padding-right:0px ;      
+        }
+        .girislogo{
+            float: right;
+            width: 53px;
+            height: 26px;
+            margin-top: 45px;
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+        .giris{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            float: right;
+            margin: 0px;
+            padding-top: 7px;
+            padding-right:0px ;  
+        }
+        .üye{
+            text-decoration: none;
+            color: black;
+        }
+        .article{
+            width: auto;
+            height: auto;
+        }
+        .icerikler{
+            display: inline-block;
+            width: auto;
+            height: auto;
+        }
+        .icerikblok{
+            display: inline-block;
+            margin-left: 40px;
+            width: 600px;
+            height: 400px;
+            margin-top: 30px;
+        }
+        .icerikblokp{
+            font-size: 30px;
+            padding-top:0px ;   
+            margin: 0px;   
+            color: black;
+            text-align: center;
+        }
+        .icerikblok-2{
+            float:right;
+            width: 600px;
+            height: 400px;
+            margin-top: 30px;
+            margin-right: 40px;
+        }
+        .icerikblokp-2{
+            font-size: 30px;
+            padding-left:10px;
+            padding-top:33px ;   
+            margin: 0px;   
+            color: black;
+            text-align: center;
+        }
+        .icerikblok-3{
+            float:left;
+            width: 600px;
+            height: 430px;
+            margin-top: 30px;
+            margin-left:40px ;
+        }
+        .icerikblokp-3{
+            font-size: 30px;
+            padding-left:10px;
+            padding-top:0px ;   
+            margin: 0px;   
+            color: black;
+            text-align: center;
+        }
+        .icerikblok-4{
+            float:right;
+            width: 600px;
+            height: 400px;
+            margin-top: 30px;
+            margin-right: 40px ;
+        }
+        .icerikblokp-4{
+            font-size: 30px;
+            padding-left:10px;
+            padding-top:0px ;   
+            margin: 0px;   
+            color: black;
+            text-align: center;
+        }
+        .icerika{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            margin: center;
+        }
+        .günlükonarilan{
+            width: 1340px;
+            height: 350px;
+            margin-top: 100px;
+            background-color: #5353621a;
+        }
+        .günlükonarilanimg{
+            width: 427px;
+            height: 297px;
+            float: right;
+           margin: 25px;
+        }
+        .günlükonarilanp{
+            display: inline-block;
+            font-size: 45px;
+            margin-left: 125px;
+            margin-top: 85px;
+        }
+        .sayisalveri{
+            height: 50px;
+        }
+        .huawei,.xami,.samsung{
+            float: left;
+            font-size: 30px;
+            margin: 0px;
+            margin-left: 35px;
+            margin-top: 5px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .huaweisayi,.xamisayi,.samsungsayi{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 70px;
+            font-size: 45px;
+            text-align: center ;
+            ;
+        }
+        .footer {
+            background-color: #414141;
+            width: auto;
+            text-align: left;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
+        .footer .footer-left,.footer .footer-center,.footer .footer-right {
+             display: inline-block;
+            vertical-align: top;    
+        }
+
+
+/* footer left*/
+
+        .footer .footer-left {
+            width: 33%;
+            padding-right: 15px;
+        }
+
+        .footer .about {
+            line-height: 20px;
+            color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;  
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+  width: 250px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color: #fffafa;
+  margin: 20px 0 12px;
+  padding: 0;
+  width: 500px;
+  font-size: 15px;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <!--header-->
+<div class="header">
+        <div class="mail">
+            <a href="#">
+            <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/mail.png" alt="görüntülenemiyor">
+            <p class="mailp">int@destek.com</p></a>
+        </div>
+
+
+        <div class="telefon">
+            <a href="#">
+         <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/telefon.png" alt="görüntülenemiyor">
+         <p class="telefonp">212 555 55 55</p></a>
+        </div>
+
+
+        <div class="whatsapp">
+            <a href="#">
+            <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/whatsapp.png" alt="görüntülenemiyor">
+            <p class="whatsappp">0555 222 22 22</p></a>
+        </div>
+        
+        
+        <p class="servis">İNT TEKNİK SEVİS</p>
+        
+           
+    </div>
+
+    <!--NAV-->
+    <div class="nav">
+        <div class="logo">
+            <a class="üye" href="index.html" target="_self">
+               <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/logo.jpg.jpg" alt="görüntülenemiyor"/></a>
+            </div>
+               <div class="menü-üst">
+                   <ul>
+                       <li> <a class="menü" href="anasayfa.html">Ana Sayfa</a> </li>
+                       <li> <a class="menü" href="serviskaydı.html">Servis Kaydı</a> </li>
+                       <li> <a class="menü" href="servissorgulama.html">Servis Sorgulama</a> </li>
+                       <li> <a class="menü" href="iletisim.html">İletişim</a> </li>
+                   </ul>
+               </div>
+               <div class="yeniüyelogo">
+                    <a class="üye" href="yeniüye.html" target="_self">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/yeniüye.fw.png" alt="görüntülenemiyor"> 
+                   <p class="yeniüye">Yeni Üye</p></a>
+                </div> 
+                <div class="girislogo">
+                    <a class="üye" href="giris.html" target="_self">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/giris.fw.png" alt="görüntülenemiyor"> 
+                    <p class="giris">Giris</p></a>  
+                 </div> 
+
+    </div>
+
+     <!--ARTİCLE-->
+     <div class="article">
+       <div class="icerikler">
+           
+            <div class="icerikblok">
+                <a class="icerika" href="#">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/Xiaomi-Mi-hesabı-.png" alt="görüntülenemiyor">
+                    <p class="icerikblokp">Mi Hesabı Kaldırma</p>
+                </a>
+            </div>
+
+           <div class="icerikblok-2">
+                <a class="icerika" href="#">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/google-hesap-kapatma.png" alt="görüntülenemiyor">
+                    <p class="icerikblokp-2">Google Hesabı Yedekleme ve Kaldırma</p>
+                </a>
+            </div>
+            <div class="günlükonarilan">
+                  
+                <div class="günlükonarilanimg">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/akilli-telefon-ve-tablet-tamir2.png" alt="görüntülenemiyor">
+                </div>
+                <p class="günlükonarilanp">GÜNLÜK ONARILAN CİHAZ</p>
+            <div class="sayisalveri">
+                <div class="huaweisayi">33</div>
+                <p class="huawei">Huawei</p>
+                
+                <div class="xamisayi">22</div>
+                <p class="xami">Xami</p>
+               
+                <div class="samsungsayi">44</div>
+                <p class="samsung">Samsung</p>
+            </div>
+
+            </div>
+            
+             <div class="icerikblok-3">
+                <a class="icerika" href="#">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/huawei-mate-30-pro.jpg" alt="görüntülenemiyor">
+                    <p class="icerikblokp-3">Cihazınız Hangi Durumlarda <br>Garanti Dışı Kalır</p>
+                </a>
+            </div>
+
+           <div class="icerikblok-4">
+                <a class="icerika" href="#">
+                    <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/Xiaomi-Mi-hesabı-.png" alt="görüntülenemiyor">
+                    <p class="icerikblokp-4">Google Hesabı Yedekleme ve Kaldırma</p>
+                </a>
+            </div>
+            
+        </div>
+     </div>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span> İnt Teknik Servis </span> Firmamızın bütün sosyal medya kanallarından ulaşım sağlayarak takip edebilirsiniz. Her türlü soru ve almış olduğunuz hatalara sizlere hizmet vermek bizler için mutluluktur. Sorunlarınızın kesin ve net çözüm yolu <span>INTTEKNIKSERVIS </span>
+          </p>
+          <div class="icons">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span> Adres</span> Ankara Cad. No:59 Kastelli İş Merk. K:3 D:301 İstanbul Fatih</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> (212) 533 93 10</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">  mehmetakbas86@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+            <img src="file:///C|/Users/90545/Desktop/INTTEKNIKSERVIS/HTML/img/logo-fw.fw.png" alt="görüntülenemiyor"/>
+          <p class="menu">
+            <a href="#"> Ana Sayfa</a> |
+            <a href="#"> Hakkımızda</a> |
+            <a href="#"> Servis Kaydı</a> |
+            <a href="#"> Kayıt Sorgulama</a> |
+            <a href="#"> İletişim</a> 
+          </p>
+          <p class="name"> Company Name &copy; 2016</p>
+        </div>
+      </footer>
+
+
+</body>
+</html>
